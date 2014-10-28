@@ -1,0 +1,417 @@
+/* GRID
+ * this file part is a copy of kube framework
+ * all credits to this creation is for the team of kube.
+-----------------------------------------------------------------------------*/
+.@{prefix}-units-container:after,
+.@{prefix}-units-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.@{prefix}-units-container:after,
+.@{prefix}-units-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.@{prefix}-units-container {
+  /* it's the trick to not collapse padding-top in the child element */
+  padding-top: 1px;
+  margin-top: -1px;
+}
+.@{prefix}-units-row {
+  margin-bottom: 1.618em;
+}
+.width-100,
+.@{prefix}-unit-100 {
+  width: 100%;
+}
+.width-90,
+.@{prefix}-unit-90 {
+  width: 90%;
+}
+.width-80,
+.@{prefix}-unit-80 {
+  width: 80%;
+}
+.width-75,
+.@{prefix}-unit-75 {
+  width: 75%;
+}
+.width-70,
+.@{prefix}-unit-70 {
+  width: 70%;
+}
+.width-66,
+.@{prefix}-unit-66 {
+  width: 66.6%;
+}
+.width-65,
+.@{prefix}-unit-65 {
+  width: 65%;
+}
+.width-60,
+.@{prefix}-unit-60 {
+  width: 60%;
+}
+.width-50,
+.@{prefix}-unit-50 {
+  width: 50%;
+}
+.width-40,
+.@{prefix}-unit-40 {
+  width: 40%;
+}
+.width-35,
+.@{prefix}-unit-35 {
+  width: 35%;
+}
+.width-33,
+.@{prefix}-unit-33 {
+  width: 33.3%;
+}
+.width-30,
+.@{prefix}-unit-30 {
+  width: 30%;
+}
+.width-25,
+.@{prefix}-unit-25 {
+  width: 25%;
+}
+.width-20,
+.@{prefix}-unit-20 {
+  width: 20%;
+}
+.width-10,
+.@{prefix}-unit-10 {
+  width: 10%;
+}
+input.width-100,
+input.@{prefix}-unit-100 {
+  width: 98.6%;
+}
+textarea.width-100,
+textarea.@{prefix}-unit-100 {
+  width: 98.8%;
+}
+select.width-100,
+select.@{prefix}-unit-100 {
+  width: 99.4%;
+}
+.@{prefix}-units-row .@{prefix}-unit-90,
+.@{prefix}-units-row .@{prefix}-unit-80,
+.@{prefix}-units-row .@{prefix}-unit-75,
+.@{prefix}-units-row .@{prefix}-unit-70,
+.@{prefix}-units-row .@{prefix}-unit-66,
+.@{prefix}-units-row .@{prefix}-unit-65,
+.@{prefix}-units-row .@{prefix}-unit-60,
+.@{prefix}-units-row .@{prefix}-unit-50,
+.@{prefix}-units-row .@{prefix}-unit-40,
+.@{prefix}-units-row .@{prefix}-unit-35,
+.@{prefix}-units-row .@{prefix}-unit-33,
+.@{prefix}-units-row .@{prefix}-unit-30,
+.@{prefix}-units-row .@{prefix}-unit-25,
+.@{prefix}-units-row .@{prefix}-unit-20,
+.@{prefix}-units-row .@{prefix}-unit-10 {
+  float: left;
+  margin-left: 3%;
+}
+.@{prefix}-units-row .@{prefix}-unit-90:first-child,
+.@{prefix}-units-row .@{prefix}-unit-80:first-child,
+.@{prefix}-units-row .@{prefix}-unit-75:first-child,
+.@{prefix}-units-row .@{prefix}-unit-70:first-child,
+.@{prefix}-units-row .@{prefix}-unit-66:first-child,
+.@{prefix}-units-row .@{prefix}-unit-65:first-child,
+.@{prefix}-units-row .@{prefix}-unit-60:first-child,
+.@{prefix}-units-row .@{prefix}-unit-50:first-child,
+.@{prefix}-units-row .@{prefix}-unit-40:first-child,
+.@{prefix}-units-row .@{prefix}-unit-35:first-child,
+.@{prefix}-units-row .@{prefix}-unit-33:first-child,
+.@{prefix}-units-row .@{prefix}-unit-30:first-child,
+.@{prefix}-units-row .@{prefix}-unit-25:first-child,
+.@{prefix}-units-row .@{prefix}-unit-20:first-child,
+.@{prefix}-units-row .@{prefix}-unit-10:first-child {
+  margin-left: 0;
+}
+.@{prefix}-units-row .@{prefix}-unit-90 {
+  width: 89.7%;
+}
+.@{prefix}-units-row .@{prefix}-unit-80 {
+  width: 79.4%;
+}
+.@{prefix}-units-row .@{prefix}-unit-75 {
+  width: 74.25%;
+}
+.@{prefix}-units-row .@{prefix}-unit-70 {
+  width: 69.1%;
+}
+.@{prefix}-units-row .@{prefix}-unit-66 {
+  width: 65.66666666666666%;
+}
+.@{prefix}-units-row .@{prefix}-unit-65 {
+  width: 65.66666666666666%;
+}
+.@{prefix}-units-row .@{prefix}-unit-60 {
+  width: 58.800000000000004%;
+}
+.@{prefix}-units-row .@{prefix}-unit-50 {
+  width: 48.5%;
+}
+.@{prefix}-units-row .@{prefix}-unit-40 {
+  width: 38.2%;
+}
+.@{prefix}-units-row .@{prefix}-unit-35 {
+  width: 31.333333333333332%;
+}
+.@{prefix}-units-row .@{prefix}-unit-33 {
+  width: 31.333333333333332%;
+}
+.@{prefix}-units-row .@{prefix}-unit-30 {
+  width: 27.9%;
+}
+.@{prefix}-units-row .@{prefix}-unit-25 {
+  width: 22.75%;
+}
+.@{prefix}-units-row .@{prefix}-unit-20 {
+  width: 17.6%;
+}
+.@{prefix}-units-row .@{prefix}-unit-10 {
+  width: 7.3%;
+}
+.@{prefix}-unit-push-90,
+.@{prefix}-unit-push-80,
+.@{prefix}-unit-push-75,
+.@{prefix}-unit-push-70,
+.@{prefix}-unit-push-66,
+.@{prefix}-unit-push-65,
+.@{prefix}-unit-push-60,
+.@{prefix}-unit-push-50,
+.@{prefix}-unit-push-40,
+.@{prefix}-unit-push-35,
+.@{prefix}-unit-push-33,
+.@{prefix}-unit-push-30,
+.@{prefix}-unit-push-25,
+.@{prefix}-unit-push-20,
+.@{prefix}-unit-push-10 {
+  position: relative;
+}
+.@{prefix}-unit-push-90 {
+  left: 92.7%;
+}
+.@{prefix}-unit-push-80 {
+  left: 82.4%;
+}
+.@{prefix}-unit-push-75 {
+  left: 77.25%;
+}
+.@{prefix}-unit-push-70 {
+  left: 72.1%;
+}
+.@{prefix}-unit-push-66 {
+  left: 68.66666666666666%;
+}
+.@{prefix}-unit-push-65 {
+  left: 68.66666666666666%;
+}
+.@{prefix}-unit-push-60 {
+  left: 61.800000000000004%;
+}
+.@{prefix}-unit-push-50 {
+  left: 51.5%;
+}
+.@{prefix}-unit-push-40 {
+  left: 41.2%;
+}
+.@{prefix}-unit-push-35 {
+  left: 34.33333333333333%;
+}
+.@{prefix}-unit-push-33 {
+  left: 34.33333333333333%;
+}
+.@{prefix}-unit-push-30 {
+  left: 30.9%;
+}
+.@{prefix}-unit-push-25 {
+  left: 25.75%;
+}
+.@{prefix}-unit-push-20 {
+  left: 20.6%;
+}
+.@{prefix}-unit-push-10 {
+  left: 10.3%;
+}
+.@{prefix}-units-row .@{prefix}-unit-push-right {
+  float: right;
+}
+.centered,
+.@{prefix}-unit-centered {
+  float: none !important;
+  margin: 0 auto !important;
+}
+.@{prefix}-unit-padding {
+  padding: 1.618em;
+}
+.@{prefix}-units-padding .@{prefix}-unit-100,
+.@{prefix}-units-padding .@{prefix}-unit-90,
+.@{prefix}-units-padding .@{prefix}-unit-80,
+.@{prefix}-units-padding .@{prefix}-unit-75,
+.@{prefix}-units-padding .@{prefix}-unit-70,
+.@{prefix}-units-padding .@{prefix}-unit-66,
+.@{prefix}-units-padding .@{prefix}-unit-65,
+.@{prefix}-units-padding .@{prefix}-unit-60,
+.@{prefix}-units-padding .@{prefix}-unit-50,
+.@{prefix}-units-padding .@{prefix}-unit-40,
+.@{prefix}-units-padding .@{prefix}-unit-35,
+.@{prefix}-units-padding .@{prefix}-unit-33,
+.@{prefix}-units-padding .@{prefix}-unit-30,
+.@{prefix}-units-padding .@{prefix}-unit-25,
+.@{prefix}-units-padding .@{prefix}-unit-20,
+.@{prefix}-units-padding .@{prefix}-unit-10 {
+  padding: 1.618em;
+}
+.@{prefix}-units-split .@{prefix}-unit-90,
+.@{prefix}-units-split .@{prefix}-unit-80,
+.@{prefix}-units-split .@{prefix}-unit-75,
+.@{prefix}-units-split .@{prefix}-unit-70,
+.@{prefix}-units-split .@{prefix}-unit-66,
+.@{prefix}-units-split .@{prefix}-unit-65,
+.@{prefix}-units-split .@{prefix}-unit-60,
+.@{prefix}-units-split .@{prefix}-unit-50,
+.@{prefix}-units-split .@{prefix}-unit-40,
+.@{prefix}-units-split .@{prefix}-unit-35,
+.@{prefix}-units-split .@{prefix}-unit-33,
+.@{prefix}-units-split .@{prefix}-unit-30,
+.@{prefix}-units-split .@{prefix}-unit-25,
+.@{prefix}-units-split .@{prefix}-unit-20,
+.@{prefix}-units-split .@{prefix}-unit-10 {
+  margin-left: 0;
+}
+.@{prefix}-units-split .@{prefix}-unit-90 {
+  width: 90%;
+}
+.@{prefix}-units-split .@{prefix}-unit-80 {
+  width: 80%;
+}
+.@{prefix}-units-split .@{prefix}-unit-75 {
+  width: 75%;
+}
+.@{prefix}-units-split .@{prefix}-unit-70 {
+  width: 70%;
+}
+.@{prefix}-units-split .@{prefix}-unit-66 {
+  width: 66.6%;
+}
+.@{prefix}-units-split .@{prefix}-unit-65 {
+  width: 65%;
+}
+.@{prefix}-units-split .@{prefix}-unit-60 {
+  width: 60%;
+}
+.@{prefix}-units-split .@{prefix}-unit-50 {
+  width: 50%;
+}
+.@{prefix}-units-split .@{prefix}-unit-40 {
+  width: 40%;
+}
+.@{prefix}-units-split .@{prefix}-unit-35 {
+  width: 35%;
+}
+.@{prefix}-units-split .@{prefix}-unit-33 {
+  width: 33.3%;
+}
+.@{prefix}-units-split .@{prefix}-unit-30 {
+  width: 30%;
+}
+.@{prefix}-units-split .@{prefix}-unit-25 {
+  width: 25%;
+}
+.@{prefix}-units-split .@{prefix}-unit-20 {
+  width: 20%;
+}
+.@{prefix}-units-split .@{prefix}-unit-10 {
+  width: 10%;
+}
+
+
+/* =Responsive
+-----------------------------------------------------------------------------*/
+@media only screen and (max-width: 767px) {
+  .mobile-width-100 {
+	width: 100%;
+  }
+  .@{prefix}-units-row .@{prefix}-unit-90,
+  .@{prefix}-units-row .@{prefix}-unit-80,
+  .@{prefix}-units-row .@{prefix}-unit-75,
+  .@{prefix}-units-row .@{prefix}-unit-70,
+  .@{prefix}-units-row .@{prefix}-unit-66,
+  .@{prefix}-units-row .@{prefix}-unit-65,
+  .@{prefix}-units-row .@{prefix}-unit-60,
+  .@{prefix}-units-row .@{prefix}-unit-50,
+  .@{prefix}-units-row .@{prefix}-unit-40,
+  .@{prefix}-units-row .@{prefix}-unit-35,
+  .@{prefix}-units-row .@{prefix}-unit-33,
+  .@{prefix}-units-row .@{prefix}-unit-30,
+  .@{prefix}-units-row .@{prefix}-unit-25,
+  .@{prefix}-units-row .@{prefix}-unit-20,
+  .@{prefix}-units-row .@{prefix}-unit-10 {
+	width: 100%;
+	float: none;
+	margin-left: 0;
+	margin-bottom: 1.618em;
+  }
+  .@{prefix}-unit-push-90,
+  .@{prefix}-unit-push-80,
+  .@{prefix}-unit-push-75,
+  .@{prefix}-unit-push-70,
+  .@{prefix}-unit-push-66,
+  .@{prefix}-unit-push-65,
+  .@{prefix}-unit-push-60,
+  .@{prefix}-unit-push-50,
+  .@{prefix}-unit-push-40,
+  .@{prefix}-unit-push-35,
+  .@{prefix}-unit-push-33,
+  .@{prefix}-unit-push-30,
+  .@{prefix}-unit-push-25,
+  .@{prefix}-unit-push-20,
+  .@{prefix}-unit-push-10 {
+	left: 0;
+  }
+  .@{prefix}-units-row .@{prefix}-unit-push-right {
+	float: none;
+  }
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-90,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-80,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-75,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-70,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-66,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-65,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-60,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-40,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-30,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-35,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-33,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-25,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-20,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-10 {
+	float: left;
+	margin-left: 3%;
+	width: 48.5%;
+  }
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-90:first-child,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-80:first-child,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-75:first-child,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-70:first-child,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-66:first-child,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-65:first-child,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-60:first-child,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-40:first-child,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-35:first-child,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-30:first-child,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-33:first-child,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-25:first-child,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-20:first-child,
+  .@{prefix}-units-mobile-50 .@{prefix}-unit-10:first-child {
+	margin-left: 0;
+  }
+}
+.end { margin-bottom:0!important }

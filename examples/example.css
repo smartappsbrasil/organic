@@ -1,0 +1,19 @@
+body {
+	font-family: arial, sans-serif;
+	font-size:12px;
+}
+ul {
+	margin:0;
+}
+ul li {
+	padding:0;
+	list-style: none;
+}
+.miniblocks {
+	float:left;
+	margin-right:4px;
+	margin-bottom:4px;
+}
+table td {
+	padding:4px;
+}
