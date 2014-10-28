@@ -40,5 +40,4 @@ All credits is reserved to developers that contribute to this framework.
 	This example below show how you can use tags:
 	example: {prefix}-{tag}-{option};
 
-@created 2014-11-15
 @author José Wilker <jose.wilker@smartapps.com.br>
