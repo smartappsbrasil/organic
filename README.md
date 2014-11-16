@@ -17,7 +17,7 @@ All credits is reserved to developers that contribute to this framework.
 	If you want customize organic to your preferences, you can customize it with a one shot!:
 	1. sh build.sh
 
-	Pay atention: You need allow the builder 'build.sh' to execute on your system, run: chmod +x build.sh
+	Pay atention: You need allow the builder 'src/build.sh' to execute on your system, run: chmod +x build.sh
 
 ## Usage:
 

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #
-# @name OrganicLessBuild
+# @name Organic Builder
 # @author José Wilker <jose.wilker@smartapps.com.br>
 # @description Builder for organiCSS
 # @date 2014-11-14
